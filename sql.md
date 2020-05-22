@@ -60,9 +60,9 @@ intB|int|在庫
 # (B)テーブルを作る．
 create table tableA (
   id int primary key auto_increment, # ここはいつも同じ
-  varcharA varchar(40),
-  intA int,
-  intB int # 最後にはカンマがないことに注意．
+  varcharA varchar(40) not null,
+  intA int not null,
+  intB int not null # 最後にはカンマがないことに注意．
 );
 ```
 
