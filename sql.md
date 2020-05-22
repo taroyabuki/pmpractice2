@@ -25,7 +25,7 @@ SQLはとても強力な言語で，知っているとデータ処理の仕事�
 データベースを作り直したいという場合は再実行してください．
 
 ```sql
-# (A1)mydbというデータベースが既にあるなら削除する（危険）．
+# (A1)mydbというデータベースが既にあるなら削除する（危険なSQL）．
 drop database if exists mydb;
 
 # (A2)mydbというデータベースを作る．
@@ -34,10 +34,10 @@ create database mydb charset=utf8mb4;
 # (A3)ユーザ名testuser，パスワードpassでmydbにアクセスできるようにする．
 grant all on mydb.* to testuser@localhost identified by 'pass';
 
-# (A4)mydbを使う．
+# (A4)mydbを使うことを宣言する．
 use mydb;
 
-# (A5)tableAというテーブルが既にあるなら削除する（危険）．
+# (A5)tableAというテーブルが既にあるなら削除する（危険なSQL）．
 drop table if exists tableA;
 ```
 
@@ -101,7 +101,7 @@ SQLの実行方法を二つ紹介します．
 
 コンソールを使うのが手軽ですが，気の弱い人は，phpMyAdminを使いましょう．
 
-### コンソール
+### コンソール（推奨）
 
 Windowsのスタートボタンを右クリックして，Windows PowerShell（管理者でない）を起動します．
 コマンドプロンプトでもかまいません．
