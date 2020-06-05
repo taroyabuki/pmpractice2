@@ -141,7 +141,7 @@ SQL文をコピペして実行します．
 
 phpMyAdminは，MySQLを操作するためのウェブアプリです．
 
-http://localhost/myphpmyadmin で利用します．
+http://localhost/phpmyadmin で利用します．
 
 SQLタブをクリックするとこんな画面になるので，SQL文を貼り付けて実行します．
 
