@@ -143,7 +143,7 @@ phpMyAdminは，MySQLを操作するためのウェブアプリです．
 
 http://localhost/phpmyadmin/ で利用します．
 
-SQLタブをクリックするとこんな画面になるので，SQL文を貼り付けて実行します．
+SQLタブをクリックするとこんな画面になるので，SQL文を貼り付けて実行します．（データベースmydbを作ったのに左側に出てこないというときは，ページを再読込します．）
 
 ![](images/phpmyadmin.png)
 
