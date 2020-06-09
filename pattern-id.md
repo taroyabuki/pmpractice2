@@ -16,7 +16,7 @@ localhostなら，http://localhost/tableA.php?id=2 でID=2のデータが表示�
 手順は次のとおりです．
 
 1. URL中のidの取得
-1. SQL実行
+1. SQLの実行
 1. 結果の処理
 
 ### 1. URL中のidの取得
@@ -40,7 +40,7 @@ $prepare->execute();                             # 実行
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);  # 結果の取得
 ```
 
-補足：「`$sql = "SELECT * FROM tableA where id={$id}";`として埋め込めば簡単と思うかもしれませんが，この書き方はいけません．SQLインジェクションという攻撃を受けます．
+補足：「`$sql = "SELECT * FROM tableA where id={$id}";`として埋め込めば簡単と思うかもしれませんが，この書き方はいけません．SQLインジェクションという攻撃を受けます．（と言いながら，$idを文字列のままにして`PDO::PARAM_STR`で埋め込んでごめんなさい．）
 
 ### 3. 結果の処理
 

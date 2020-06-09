@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel='stylesheet' href='style.css' />
+    <title>登録フォーム</title>
+  </head>
+  <body>
+    <form action="pattern-post.php" method="post">
+      <table>
+        <tr>
+          <th>商品名</th>
+          <td><input name="varcharA" type="text" value="D"/></td>
+        </tr>
+        <tr>
+          <th>価格</th>
+          <td><input name="intA" type="text" value="5000"/></td>
+        </tr>
+        <tr>
+          <th>在庫</th>
+          <td><input name="intB" type="text" value="42"/></td>
+        </tr>
+      </table>
+      <input type="submit" value="送信" />
+      <input type="reset" value="リセット" />
+    </form>
+  </body>
+</html>
