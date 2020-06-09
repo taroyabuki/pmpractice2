@@ -36,9 +36,6 @@
 ### 特定のデータの表示
 
 テーブル内の特定のデータを表示します．
-URLで指定した，テーブル内の特定のデータを表示します．
-ここではURL（のパス以降）を「tableA.php?id=番号」とします．
-localhostなら，http://localhost/tableA?id=2 でID=2のデータが表示されるようにします．
 
 ![](images/pattern2.png)
 
