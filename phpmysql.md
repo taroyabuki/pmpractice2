@@ -30,4 +30,4 @@ Can't connect to the database: SQLSTATE[HY000] [1049] Unknown database 'mydb'
 
 ## 2. 問合せ
 
-[表の全データ表示（実装）](pattern-table.md)で解説します．
+[全データ表示（実装）](pattern-table.md)で解説します．
