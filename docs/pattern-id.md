@@ -64,6 +64,6 @@ foreach ($result as $row) {
 
 補足：結果は1件なので`foreach`を使う必要はないのですが，構文が増えると難しいと感じる人がいるかもしれないので，全件表示と同じ構文を使っています．
 
-**以上のコードを含む[`pattern-id.php`](pattern-id.php)を作り，http://localhost/pattern-id.php?id=2 やhttp://localhost/pattern-id.php?id=3 でデータが表示されることを確かめてください．**
+**以上のコードを含む[`tableA.php`](tableA.php)を作り，http://localhost/tableA.php?id=2 やhttp://localhost/tableA.php?id=3 でデータが表示されることを確かめてください．**
 
 補足：データがない場合にはないことがわかるようなページを返すべきなのですが，ここではそれは省略しましょう．

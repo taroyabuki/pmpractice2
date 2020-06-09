@@ -8,16 +8,16 @@
 以下は一般論です．
 具体的な学び方は研究室の教員の指示に従ってください．
 
-1. [ウェブアプリとは何か](introduction.md)
-1. [準備](setup.md)
+1. [ウェブアプリとは何か](docs/introduction.md)
+1. [準備](docs/setup.md)
 1. PM実験の復習
-    1. [HTMLファイル](static-file.md)
-    1. [スタイル指定](style.md)
+    1. [HTMLファイル](docs/static-file.md)
+    1. [スタイル指定](docs/style.md)
 1. サーバについての理解
-    1. [ウェブサーバ](apache.md)
-    1. [データベース](database.md)
-    1. [データベースの操作](sql.md)
-    1. [PHP](php.md)（2回目以降に読む）
-    1. [PHPとMySQL](phpmysql.md)（2回目以降に読む）
-1. [ウェブアプリのパターン](patterns.md)
+    1. [ウェブサーバ](docs/apache.md)
+    1. [データベース](docs/database.md)
+    1. [データベースの操作](docs/sql.md)
+    1. [PHP](docs/php.md)（2回目以降に読む）
+    1. [PHPとMySQL](docs/phpmysql.md)（2回目以降に読む）
+1. [ウェブアプリのパターン](docs/patterns.md)
 1. 本番サーバへのデプロイ（準備中）
