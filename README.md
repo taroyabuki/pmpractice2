@@ -18,6 +18,6 @@
     1. [データベース](database.md)
     1. [データベースの操作](sql.md)
     1. [PHP](php.md)（2回目以降に読む）
-    1. PHPとMySQL（準備中）
+    1. [PHPとMySQL](phpmysql.md)（2回目以降に読む）
 1. [ウェブアプリのパターン](patterns.md)
 1. 本番サーバへのデプロイ（準備中）

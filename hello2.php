@@ -6,6 +6,10 @@
     <title>タイトル</title>
   </head>
   <body>
-    <p>計算結果は<?php echo(1 + 1); ?>です．</p>
+    <p>計算結果は<?php echo 1 + 1; ?>です．</p>
+<?php
+$foo = 'world';
+echo "<p>hello, {$foo}</p>";
+?>
   </body>
 </html>
