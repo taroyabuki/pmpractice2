@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel='stylesheet' href='style.css' />
-    <title>全データ表示（その2）</title>
+    <title>全データ表示（その3）</title>
   </head>
   <body>
 
-  <table>
+<table>
+  <caption>全データ</caption>
   <tr>
     <th>ID</th>
     <th>商品名</th>

@@ -29,11 +29,24 @@ $id = $_GET['id']; # URLからIDを取得
 
 ### 2. SQLの実行
 
-テーブル`tableA`の全データを取り出すSQLは「`select * from tableA where id = 番号`」です（[データベースの操作](sql.md)のC3）．この番号の部分（コードの`:id`）に，URLから取り出したIDを埋め込みます．
+テーブル`tableA`の全データを取り出すSQLは「`select * from tableA where id = 番号`」です（[データベースの操作](sql.md)のC3）．
+この番号の部分は実行時に決まるので，穴埋めにします．
+
+```sql
+SELECT * FROM tableA where id=穴
+```
+
+ふつうは次のように書きます．
+
+```sql
+SELECT * FROM tableA where id=:id
+```
+
+こういう穴埋めSQLを使うプログラムは次のようになります．
 
 ```php
 require 'db.php';                                # 接続
-$sql = 'SELECT * FROM tableA where id=:id';      # SQL文
+$sql = 'SELECT * FROM tableA where id=:id';      # 穴埋めSQL文
 $prepare = $db->prepare($sql);                   # 準備
 $prepare->bindValue(':id', $id, PDO::PARAM_STR); # 番号の埋め込み
 $prepare->execute();                             # 実行

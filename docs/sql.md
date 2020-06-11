@@ -111,8 +111,10 @@ MySQLのクライアントプログラムを起動し，次のコマンドを実
 
 ```bash
 c:
-/xampp/mysql/bin/mysql.exe -uroot
+/xampp/mysql/bin/mysql.exe -uroot --default-character-set=cp932
 ```
+
+補足：ASCIIしか使わないなら`--default-character-set=cp932`は不要です．Windows以外ではおそらく，`cp932`ではなく`utf8`です．
 
 次のようなエラーメッセージが表示されたら，XAMPP Control PanelでMySQLが動いていることを確認してください．
 

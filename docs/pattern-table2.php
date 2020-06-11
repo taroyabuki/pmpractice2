@@ -7,7 +7,8 @@
   </head>
   <body>
 
-  <table>
+<table>
+  <caption>全データ</caption>
   <tr>
     <th>ID</th>
     <th>商品名</th>

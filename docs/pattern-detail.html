@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel='stylesheet' href='style.css' />
+    <title>詳細検索</title>
+  </head>
+  <body>
+    <form action="pattern-detail.php" method="get">
+      <table>
+        <tr>
+          <th>商品名に含む</th>
+          <td><input name="varcharA" type="text" value="D"/></td>
+        </tr>
+        <tr>
+          <th>価格</th>
+          <td>
+            <label><input name="price" type="radio" value="500" checked/>500円まで</label>
+            <label><input name="price" type="radio" value="100000000"/>上限なし</label>
+          </td>
+        </tr>
+        <tr>
+          <th>在庫</th>
+          <td><label><input name="instock" type="checkbox" checked/>ありに限定</label>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="送信" />
+      <input type="reset" value="リセット" />
+    </form>
+  </body>
+</html>
