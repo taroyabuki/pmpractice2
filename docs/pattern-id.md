@@ -67,3 +67,7 @@ foreach ($result as $row) {
 **以上のコードを含む[`tableA.php`](tableA.php)を作り，http://localhost/tableA.php?id=2 やhttp://localhost/tableA.php?id=3 でデータが表示されることを確かめてください．**
 
 補足：データがない場合にはないことがわかるようなページを返すべきなのですが，ここではそれは省略しましょう．
+
+## 応用
+
+特定のアイテムをURLで指せるようになると，全データの表示結果をリンクにできます．[全データ表示（実装）](pattern-table.md)に（応用）として書いておきました．

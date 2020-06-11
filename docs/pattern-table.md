@@ -105,3 +105,11 @@ foreach ($result as $row) {
 ```
 
 **以上のコードを含む[`pattern-table2.php`](pattern-table2.php)を作り，http://localhost/pattern-table2.php でデータが表示されることを確かめてください．**
+
+## 応用
+
+別のパターン（[特定のデータの表示（実装）](pattern-id.md)）を実装すると，結果をリンクにできます．
+
+[pattern-table3.php](pattern-table3.php)
+
+[`pattern-table2.php`](pattern-table2.php)からの変更点は2箇所です．
