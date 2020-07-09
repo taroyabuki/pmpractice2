@@ -110,8 +110,7 @@ Windowsのスタートボタンを右クリックして，Windows PowerShell（�
 MySQLのクライアントプログラムを起動し，次のコマンドを実行します（`root`はMySQLの管理者のこと）．
 
 ```bash
-c:
-/xampp/mysql/bin/mysql.exe -uroot --default-character-set=cp932
+c:/xampp/mysql/bin/mysql.exe -uroot --default-character-set=cp932
 ```
 
 補足：ASCIIしか使わないなら`--default-character-set=cp932`は不要です．Windows以外ではおそらく，`cp932`ではなく`utf8`です．
