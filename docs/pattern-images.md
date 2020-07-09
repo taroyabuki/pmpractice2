@@ -15,15 +15,15 @@
 
 ## テーブルの準備
 
-テーブル`tableA`を修正して使うべきですが，話を簡単にするために，新しく`tableB`を作ります．
+テーブル`table1`を修正して使うべきですが，話を簡単にするために，新しく`table2`を作ります．
 次のSQLを実行してください．
 
 ```sql
 use mydb;
 
-drop table if exists tableB;
+drop table if exists table2;
 
-create table tableB (
+create table table2 (
   id int primary key auto_increment, # ここはいつも同じ
   varcharA varchar(40) not null,
   intA int not null,
@@ -31,7 +31,7 @@ create table tableB (
   varcharB varchar(40) default '' not null # ファイル名（デフォルトは空文字列）
 );
 
-insert into tableB (id, varcharA, intA, intB, varcharB) values
+insert into table2 (id, varcharA, intA, intB, varcharB) values
 (1, 'A', 1280, 1, 'product7.png'),
 (2, 'B', 2980, 0, 'product6.png'),
 (3, 'C', 198, 121, '');
@@ -39,7 +39,7 @@ insert into tableB (id, varcharA, intA, intB, varcharB) values
 
 ## 画像の表示
 
-[特定のデータの表示（実装）](pattern-id.md)をまねて，http://localhost/tableB.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
+[特定のデータの表示（実装）](pattern-id.md)をまねて，http://localhost/table2.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
 
 変わるのは，SQL文中のテーブル名と結果の処理方法です．
 
@@ -64,4 +64,4 @@ foreach ($result as $row) {
 }
 ```
 
-**[tableA.php](tableA.php)と上のコードをもとに[tableB.php](tableB.php)を作り，http://localhost/tableB.php?id=1 とhttp://localhost/tableB.php?id=2 では画像が表示され，http://localhost/tableB.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**
+**[table1.php](table1.php)と上のコードをもとに[table2.php](table2.php)を作り，http://localhost/table2.php?id=1 とhttp://localhost/table2.php?id=2 では画像が表示され，http://localhost/table2.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**

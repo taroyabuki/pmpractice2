@@ -14,7 +14,7 @@ $intA = $_POST['intA'];         # 価格
 $intB = $_POST['intB'];         # 在庫
 
 require 'db.php'; # 接続
-$sql = 'insert into tableA (varcharA, intA, intB) values (:varcharA, :intA, :intB)';
+$sql = 'insert into table1 (varcharA, intA, intB) values (:varcharA, :intA, :intB)';
 $prepare = $db->prepare($sql); # 準備
 
 $prepare->bindValue(':varcharA', $varcharA, PDO::PARAM_STR); # 埋め込み1

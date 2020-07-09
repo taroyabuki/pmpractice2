@@ -11,7 +11,7 @@
 $id = $_GET['id']; # URLからIDを取得
 
 require 'db.php';                                # 接続
-$sql = 'SELECT * FROM tableB where id=:id';      # SQL文
+$sql = 'SELECT * FROM table2 where id=:id';      # SQL文
 $prepare = $db->prepare($sql);                   # 準備
 $prepare->bindValue(':id', $id, PDO::PARAM_STR); # 番号の埋め込み
 $prepare->execute();                             # 実行

@@ -17,7 +17,7 @@
   </tr>
 <?php
 require 'db.php';                               # 接続
-$sql = 'SELECT * FROM tableA';                  # SQL文
+$sql = 'SELECT * FROM table1';                  # SQL文
 $prepare = $db->prepare($sql);                  # 準備
 $prepare->execute();                            # 実行
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC); # 結果の取得
@@ -27,7 +27,7 @@ foreach ($result as $row) {
   $varcharA = h($row['varcharA']);
   $intA     = h($row['intA']);
   $intB     = h($row['intB']);
-  $link = "tableA.php?id={$id}"; # 変更点1
+  $link = "table1.php?id={$id}"; # 変更点1
   echo '<tr>' .
     "<td><a href='{$link}'>{$id}</a></td>". # 変更点2
     "<td>{$varcharA}</td>".

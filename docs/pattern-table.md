@@ -1,6 +1,6 @@
 # 全データ表示（実装）
 
-テーブル`tableA`の全データを取り出して，表示させます．
+テーブル`table1`の全データを取り出して，表示させます．
 
 ![](images/pattern1.png)
 
@@ -11,7 +11,7 @@
 
 ## 1 SQLの実行
 
-テーブル`tableA`の全データを取り出すSQLは「`select * from tableA`」です（[データベースの操作](sql.md)のC2）．
+テーブル`table1`の全データを取り出すSQLは「`select * from table1`」です（[データベースの操作](sql.md)のC2）．
 
 このSQL文をPHPで作り，実行します．
 2行目以降は今は謎のままでかまいません．
@@ -19,7 +19,7 @@
 
 ```php
 require 'db.php';                               # 接続
-$sql = 'SELECT * FROM tableA';                  # SQL文
+$sql = 'SELECT * FROM table1';                  # SQL文
 $prepare = $db->prepare($sql);                  # 準備
 $prepare->execute();                            # 実行
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC); # 結果の取得

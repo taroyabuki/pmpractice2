@@ -59,11 +59,11 @@ $intB = $_POST['intB'];         # 在庫
 
 ## 2. SQLの実行
 
-テーブル`tableA`にデータを追加するSQLは「`insert into tableA (varcharA, intA, intB) values (:varcharA, :intA, :intB)`」です（[データベースの操作](sql.md)のC1）．この製品名，価格，在庫の部分（コードの`:varcharA`, `:intA`, `:intB`）に，先に取り出したデータを埋め込んで実行します．
+テーブル`table1`にデータを追加するSQLは「`insert into table1 (varcharA, intA, intB) values (:varcharA, :intA, :intB)`」です（[データベースの操作](sql.md)のC1）．この製品名，価格，在庫の部分（コードの`:varcharA`, `:intA`, `:intB`）に，先に取り出したデータを埋め込んで実行します．
 
 ```php
 require 'db.php'; # 接続
-$sql = 'insert into tableA (varcharA, intA, intB) values (:varcharA, :intA, :intB)';
+$sql = 'insert into table1 (varcharA, intA, intB) values (:varcharA, :intA, :intB)';
 $prepare = $db->prepare($sql); # 準備
 
 $prepare->bindValue(':varcharA', $varcharA, PDO::PARAM_STR); # 埋め込み1

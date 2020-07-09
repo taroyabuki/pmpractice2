@@ -31,7 +31,7 @@ echo '送信されたデータ：<table>' .
 require 'db.php';                               # 接続
 # SQLが長いので，ヒアドキュメントという記法で書く（EOMからEOMまでが文字列）
 $sql = <<< EOM
-select * from tableA
+select * from table1
   where varcharA like :varcharA
     and intA <= :price
     and intB > :instock

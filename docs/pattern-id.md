@@ -8,8 +8,8 @@ URLで指定した，テーブル内の特定のデータを表示します．
 
 最初にURLの仕様を決めます．
 
-ここではURL（のパス以降）を「tableA.php?id=番号」とします．
-localhostなら，http://localhost/tableA.php?id=2 でID=2のデータが表示されるようにするのです．
+ここではURL（のパス以降）を「table1.php?id=番号」とします．
+localhostなら，http://localhost/table1.php?id=2 でID=2のデータが表示されるようにするのです．
 
 ## 処理手順
 
@@ -29,31 +29,31 @@ $id = $_GET['id']; # URLからIDを取得
 
 ### 2. SQLの実行
 
-テーブル`tableA`の全データを取り出すSQLは「`select * from tableA where id = 番号`」です（[データベースの操作](sql.md)のC3）．
+テーブル`table1`の全データを取り出すSQLは「`select * from table1 where id = 番号`」です（[データベースの操作](sql.md)のC3）．
 この番号の部分は実行時に決まるので，穴埋めにします．
 
 ```sql
-SELECT * FROM tableA where id=穴
+SELECT * FROM table1 where id=穴
 ```
 
 ふつうは次のように書きます．
 
 ```sql
-SELECT * FROM tableA where id=:id
+SELECT * FROM table1 where id=:id
 ```
 
 こういう穴埋めSQLを使うプログラムは次のようになります．
 
 ```php
 require 'db.php';                                # 接続
-$sql = 'SELECT * FROM tableA where id=:id';      # 穴埋めSQL文
+$sql = 'SELECT * FROM table1 where id=:id';      # 穴埋めSQL文
 $prepare = $db->prepare($sql);                   # 準備
 $prepare->bindValue(':id', $id, PDO::PARAM_STR); # 番号の埋め込み
 $prepare->execute();                             # 実行
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);  # 結果の取得
 ```
 
-補足：「`$sql = "SELECT * FROM tableA where id={$id}";`として埋め込めば簡単と思うかもしれませんが，この書き方はいけません．SQLインジェクションという攻撃を受けます．（と言いながら，$idを文字列のままにして`PDO::PARAM_STR`で埋め込んでごめんなさい．）
+補足：「`$sql = "SELECT * FROM table1 where id={$id}";`として埋め込めば簡単と思うかもしれませんが，この書き方はいけません．SQLインジェクションという攻撃を受けます．（と言いながら，$idを文字列のままにして`PDO::PARAM_STR`で埋め込んでごめんなさい．）
 
 ### 3. 結果の処理
 
@@ -77,7 +77,7 @@ foreach ($result as $row) {
 
 補足：結果は1件なので`foreach`を使う必要はないのですが，構文が増えると難しいと感じる人がいるかもしれないので，全件表示と同じ構文を使っています．
 
-**以上のコードを含む[`tableA.php`](tableA.php)を作り，http://localhost/tableA.php?id=2 やhttp://localhost/tableA.php?id=3 でデータが表示されることを確かめてください．**
+**以上のコードを含む[`table1.php`](table1.php)を作り，http://localhost/table1.php?id=2 やhttp://localhost/table1.php?id=3 でデータが表示されることを確かめてください．**
 
 補足：データがない場合にはないことがわかるようなページを返すべきなのですが，ここではそれは省略しましょう．
 

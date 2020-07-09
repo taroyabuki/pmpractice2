@@ -93,9 +93,9 @@ echo '送信されたデータ：<table>' .
 冒頭に掲載した絵と同じ状況になるように，次のSQL文を実行します．
 
 ```sql
-delete from tableA;
+delete from table1;
 
-insert into tableA (id, varcharA, intA, intB) values
+insert into table1 (id, varcharA, intA, intB) values
 (1, 'A', 1280, 1),
 (2, 'B', 2980, 0),
 (3, 'CDF', 198, 121);
@@ -106,7 +106,7 @@ insert into tableA (id, varcharA, intA, intB) values
 送信された条件で検索するSQL文はこんな感じです．
 
 ```sql
-select * from tableA
+select * from table1
 where varcharA like '%D%'
   and intA <= 500
   and intB > 0
@@ -120,7 +120,7 @@ where varcharA like '%D%'
 そのためには，実行時に決まる部分を穴埋めにします．
 
 ```sql
-select * from tableA
+select * from table1
 where varcharA like 穴A
   and intA <= 穴B
   and intB > 穴C
@@ -129,7 +129,7 @@ where varcharA like 穴A
 これではかっこ悪いので，次のようにしましょう．
 
 ```sql
-select * from tableA
+select * from table1
 where varcharA like :varcharA
   and intA <= :price
   and intB > :instock

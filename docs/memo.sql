@@ -10,10 +10,10 @@ grant all on mydb.* to testuser@localhost identified by 'pass';
 # (A4)mydbを使う．
 use mydb;
 
-# (A5)tableAというテーブルが既にあるなら削除する（危険）．
-drop table if exists tableA;
+# (A5)table1というテーブルが既にあるなら削除する（危険）．
+drop table if exists table1;
 
-create table tableA (
+create table table1 (
   id int primary key auto_increment, # ここはいつも同じ
   varcharA varchar(40) not null,
   intA int not null,
@@ -21,7 +21,7 @@ create table tableA (
 );
 
 # (C1)データを作成する．
-insert into tableA (id, varcharA, intA, intB) values
+insert into table1 (id, varcharA, intA, intB) values
 (1, 'A', 1280, 1),
 (2, 'B', 2980, 0),
 (3, 'C', 198, 121);

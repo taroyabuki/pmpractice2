@@ -17,7 +17,7 @@
   </tr>
 <?php
 require 'db.php';                               # 接続
-$sql = 'SELECT * FROM tableA';                  # SQL文
+$sql = 'SELECT * FROM table1';                  # SQL文
 $prepare = $db->prepare($sql);                  # 準備
 $prepare->execute();                            # 実行
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC); # 結果の取得

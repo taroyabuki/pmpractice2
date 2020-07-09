@@ -19,7 +19,7 @@ SQLはとても強力な言語で，知っているとデータ処理の仕事�
 
 ### 管理系（A1～A5の5個）
 
-データベース（テーブルの入れ物）`mydb`の中に，テーブル`tableA`を作る（直前）までを例に説明しましょう．
+データベース（テーブルの入れ物）`mydb`の中に，テーブル`table1`を作る（直前）までを例に説明しましょう．
 
 この部分はこの演習では変わらないので，自分のPCで1回だけ，コピペして実行すればいいです．
 データベースを作り直したいという場合は再実行してください．
@@ -37,8 +37,8 @@ grant all on mydb.* to testuser@localhost identified by 'pass';
 # (A4)mydbを使うことを宣言する．
 use mydb;
 
-# (A5)tableAというテーブルが既にあるなら削除する（危険なSQL）．
-drop table if exists tableA;
+# (A5)table1というテーブルが既にあるなら削除する（危険なSQL）．
+drop table if exists table1;
 ```
 
 ### テーブル作成（Bの1個）
@@ -58,7 +58,7 @@ intB|int|在庫
 
 ```sql
 # (B)テーブルを作る．
-create table tableA (
+create table table1 (
   id int primary key auto_increment, # ここはいつも同じ
   varcharA varchar(40) not null,
   intA int not null,
@@ -70,25 +70,25 @@ create table tableA (
 
 ```sql
 # (C1)データを作成する．
-insert into tableA (id, varcharA, intA, intB) values
+insert into table1 (id, varcharA, intA, intB) values
 (1, 'A', 1280, 1),
 (2, 'B', 2980, 0),
 (3, 'C', 198, 121);
 
 # (C2)すべてのデータを読み込む．
-select * from tableA;
+select * from table1;
 
 # (C3)IDを指定してデータを読み込む．
-select * from tableA where id=2;
+select * from table1 where id=2;
 
 # (C4)IDを指定してデータを更新する．
-update tableA set varcharA='D', intA=200 where id=3;
+update table1 set varcharA='D', intA=200 where id=3;
 
 # (C5)IDを指定してデータを削除する．
-delete from tableA where id=1;
+delete from table1 where id=1;
 
 # 結果の確認（C2と同じ）
-select * from tableA;
+select * from table1;
 ```
 
 補足：データの操作方法を学ぶときは，CRUD（create, read, update, delete）に分けて整理するといいでしょう．
@@ -163,8 +163,8 @@ phpMyAdminで以下の手順を実行してみましょう．（詳細は割愛�
 
 1. データベースmydbを削除する．
 1. データベースmydbを作る．
-1. テーブルtableAを作る．
+1. テーブルtable1を作る．
 
 ![](images/phpmyadmin-createtable.png)
 
-4. テーブルtableAを選択→挿入タブでデータを追加する．
+4. テーブルtable1を選択→挿入タブでデータを追加する．
