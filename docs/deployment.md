@@ -67,19 +67,19 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 
 ## 各チームのサイト
 
-https://shimoda-a.pm-chiba.tech
-https://shimoda-b.pm-chiba.tech
-https://shimoda-c.pm-chiba.tech
-https://ogasawara-a.pm-chiba.tech
-https://ogasawara-b.pm-chiba.tech
-https://ogasawara-c.pm-chiba.tech
-https://yabuki-a.pm-chiba.tech
-https://yabuki-b.pm-chiba.tech
-https://yabuki-c.pm-chiba.tech
-https://yabuki-x.pm-chiba.tech
-https://takuma-a.pm-chiba.tech
-https://takuma-b.pm-chiba.tech
-https://takuma-c.pm-chiba.tech
+- https://shimoda-a.pm-chiba.tech
+- https://shimoda-b.pm-chiba.tech
+- https://shimoda-c.pm-chiba.tech
+- https://ogasawara-a.pm-chiba.tech
+- https://ogasawara-b.pm-chiba.tech
+- https://ogasawara-c.pm-chiba.tech
+- https://yabuki-a.pm-chiba.tech
+- https://yabuki-b.pm-chiba.tech
+- https://yabuki-c.pm-chiba.tech
+- https://yabuki-x.pm-chiba.tech
+- https://takuma-a.pm-chiba.tech
+- https://takuma-b.pm-chiba.tech
+- https://takuma-c.pm-chiba.tech
 
 ## うまく行かない場合
 
