@@ -20,4 +20,4 @@
     1. [PHP](docs/php.md)（2回目以降に読む）
     1. [PHPとMySQL](docs/phpmysql.md)（2回目以降に読む）
 1. [ウェブアプリのパターン](docs/patterns.md)
-1. 本番サーバへのデプロイ（準備中）
+1. [本番サーバへのデプロイ](docs/deployment.md)
