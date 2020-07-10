@@ -10,6 +10,9 @@
 
 GitHubのアカウントを報告してください→https://docs.google.com/forms/d/e/1FAIpQLSc7ro4KUs9GT0t3H-Aolizl1UKCPbmJA5Kv6lZlqvML4hAzvA/viewform
 
+矢吹の作業後，GitHubからGitHubに登録したメアド宛てにメールが届きます．
+そのメールに対応してください．（メールの有効期間が短いことに注意．）
+
 ## 概要
 
 手順を簡単に説明すると次のとおりです．
@@ -43,6 +46,8 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 1. ✔をクリックして，何かメッセージを入力して**コミット**する．
 1. 「･･･」→プッシュ
 1. 少し待ってから，サイトにアクセスする．
+
+ファイル配置はhttps://github.com/yabukilab/yabuki-x を参考にしてください．
 
 ### 2回目以降
 
