@@ -3,6 +3,9 @@
 本番サーバの変更は，GitHubを介して行います．
 本番サーバのファイルを直接編集したり，データベースを操作したりすることはできません．
 
+本番サーバで用意する環境には，開発環境（XAMPP）とは違うところがあります．
+開発環境でちゃんと動くのに本番環境ではうまく動かないという場合は，あまり悩まずに矢吹に相談してください．
+
 ## 準備
 
 GitHubのアカウントを報告してください→https://docs.google.com/forms/d/e/1FAIpQLSc7ro4KUs9GT0t3H-Aolizl1UKCPbmJA5Kv6lZlqvML4hAzvA/viewform
