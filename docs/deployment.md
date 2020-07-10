@@ -3,6 +3,12 @@
 本番サーバの変更は，GitHubを介して行います．
 本番サーバのファイルを直接編集したり，データベースを操作したりすることはできません．
 
+## 準備
+
+GitHubのアカウントを報告してください→https://docs.google.com/forms/d/e/1FAIpQLSc7ro4KUs9GT0t3H-Aolizl1UKCPbmJA5Kv6lZlqvML4hAzvA/viewform
+
+## 概要
+
 手順を簡単に説明すると次のとおりです．
 
 1. （1回だけ）GitHubのリポジトリを自分のPCにコピーする．これを**クローン**といいます．
