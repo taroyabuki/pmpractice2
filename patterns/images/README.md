@@ -39,7 +39,7 @@ insert into table2 (id, varcharA, intA, intB, varcharB) values
 
 ## 画像の表示
 
-[特定のデータの表示（実装）](../show-all/)をまねて，http://localhost/table2.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
+[特定のデータの表示（実装）](../id/)の[show.php](../id/show.php)をまねて，http://localhost/show-image.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
 
 変わるのは，SQL文中のテーブル名と結果の処理方法です．
 
@@ -64,4 +64,4 @@ foreach ($result as $row) {
 }
 ```
 
-**[../show-all/table1.php](../show-all/table1.php)と上のコードをもとに[table2.php](table2.php)を作り，http://localhost/table2.php?id=1 とhttp://localhost/table2.php?id=2 では画像が表示され，http://localhost/table2.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**
+**[show.php](../id/show.php)と上のコードをもとに[show-image.php](show-image.php)を作り，http://localhost/show-image.php?id=1 とhttp://localhost/show-image.php?id=2 では画像が表示され，http://localhost/show-image.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**
