@@ -59,4 +59,4 @@ $name = $_SESSION['名前']; // 値は「山田」になる．
 1. login.phpでユーザ名とパスワードを正しく入力すると，一般ユーザならmember.php，管理者ならadmin.phpになる．
 1. 一般ユーザはhttp://localhost/admin.php を見られない．見ようとすると，http://localhost/member.php に飛ばされる．
 1. 管理者はhttp://localhost/member.php も見られる．
-1. logout.phpにアクセスするとログインしていない状態になる．
+1. http://localhost/logout.php にアクセスするとログインしていない状態になる．
