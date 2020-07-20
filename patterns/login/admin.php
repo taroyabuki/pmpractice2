@@ -2,9 +2,9 @@
 session_start(); // セッションを開始する．
 if (!isset($_SESSION['username'])) { // ログインしていないなら，
   header('Location: login.php');     // ログインページへ転送する．
-  if (!isset($_SESSION['admin'])) {  // 管理者でないなら，
-    header('Location: member.php');  // メンバページへ転送する．
-  }
+}
+if (!isset($_SESSION['admin'])) {  // 管理者でないなら，
+  header('Location: member.php');  // メンバページへ転送する．
 }
 ?>
 <!DOCTYPE html>

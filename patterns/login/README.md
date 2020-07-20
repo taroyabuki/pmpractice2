@@ -54,9 +54,9 @@ $name = $_SESSION['名前']; // 値は「山田」になる．
 
 ドキュメントルートに上記4ファイルを置いて，以下を確認してください．（正しいユーザ名とパスワードの組は，login.phpに書いてあります．）
 
-1. ログインしていない状態でアクセスすると，login.phpになる．
-1. login.phpでユーザ名とパスワードを間違って入力すると，エラーメッセージが表示される．
+1. ログインしていない状態でhttp://localhost/admin.php http://localhost/member.php やアクセスすると，login.phpになる．
+1. http://localhost/login.phpでユーザ名とパスワードを間違って入力すると，エラーメッセージが表示される．
 1. login.phpでユーザ名とパスワードを正しく入力すると，一般ユーザならmember.php，管理者ならadmin.phpになる．
-1. 一般ユーザはadmin.phpを見られない．見ようとすると，member.phpに飛ばされる．
-1. 管理者はmember.phpも見られる．
+1. 一般ユーザはhttp://localhost/admin.php を見られない．見ようとすると，http://localhost/member.php に飛ばされる．
+1. 管理者はhttp://localhost/member.php も見られる．
 1. logout.phpにアクセスするとログインしていない状態になる．
