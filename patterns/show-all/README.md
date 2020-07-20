@@ -48,7 +48,7 @@ foreach ($result as $row) {
 
 ちょっと面倒なのですが，データベースから取り出したデータを表示するときは，関数`h`を使うようにしします（クライアントから送信されたデータも）．そうしないと，「`x < 3`」のような文字列の`<`がタグの一部と見なされてしまいます．`h`は，このような特別な文字を変換する関数です（例：`<`→`&lt;`）．（[db.php](/db.php)で定義しています．）
 
-**以上のコードを含む[`pattern-show-all1.php`](pattern-show-all1.php)を作り，http://localhost/pattern-show-all1.php でデータが表示されることを確かめてください．**
+**以上のコードを含む[`show-all1.php`](show-all1.php)を作り，http://localhost/show-all1.php でデータが表示されることを確かめてください．**
 
 ちょっと味気ないので，結果を表にします．
 HTMLのtable要素を使います．
@@ -104,12 +104,12 @@ foreach ($result as $row) {
 </table>
 ```
 
-**以上のコードを含む[`pattern-show-all2.php`](pattern-show-all2.php)を作り，http://localhost/pattern-show-all2.php でデータが表示されることを確かめてください．**
+**以上のコードを含む[`show-all2.php`](show-all2.php)を作り，http://localhost/show-all2.php でデータが表示されることを確かめてください．**
 
 ## 応用
 
 別のパターン（[特定のデータの表示（実装）](../id/)）を実装すると，結果をリンクにできます．
 
-[`pattern-show-all3.php`](pattern-show-all3.php)
+[`show-all3.php`](show-all3.php)
 
-pattern-show-all2.phpからの変更点は2箇所です．
+show-all2.phpからの変更点は2箇所です．
