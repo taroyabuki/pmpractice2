@@ -27,7 +27,7 @@ foreach ($result as $row) {
   $varcharA = h($row['varcharA']);
   $intA     = h($row['intA']);
   $intB     = h($row['intB']);
-  $link = "table1.php?id={$id}"; # 変更点1
+  $link = "show.php?id={$id}"; # 変更点1
   echo '<tr>' .
     "<td><a href='{$link}'>{$id}</a></td>". # 変更点2
     "<td>{$varcharA}</td>".
