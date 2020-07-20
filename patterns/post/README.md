@@ -15,7 +15,7 @@ HTMLのform要素でデータを入力するためのUIを作ります．
 * input要素のvalue属性は不要だが，テスト用にデータを入力するのが面倒なためつかっている．
 
 ```html
-<form action="pattern-post.php" method="post">
+<form action="post.php" method="post">
   <table>
     <tr>
       <th>商品名</th>
@@ -35,7 +35,7 @@ HTMLのform要素でデータを入力するためのUIを作ります．
 </form>
 ```
 
-**上のフォーム要素を含む[pattern-post.html](pattern-post.html)を作り，http://localhost/pattern-post.html でフォームが表示されることを確かめてください．**
+**上のフォーム要素を含む[post.html](post.html)を作り，http://localhost/post.html でフォームが表示されることを確かめてください．**
 
 補足：入力を必須にしたり，数字しか入力できないようにしたりすることもできるのですが，今はやらないでおきましょう．やったとしても，それは操作性向上のためのものであり，データのチェックにはなりません（偽装できるから）．データのチェックはサーバ側で行います．
 
@@ -48,8 +48,8 @@ HTMLのform要素でデータを入力するためのUIを作ります．
 
 ## 1. 送信されたデータの取得
 
-上で作ったフォームのデータは，`pattern-post.php`に送られます（action属性値）．
-`pattern-post.php`では，送られてきたデータを，name属性値を使って取り出します．
+上で作ったフォームのデータは，`post.php`に送られます（action属性値）．
+`post.php`では，送られてきたデータを，name属性値を使って取り出します．
 
 ```php
 $varcharA = $_POST['varcharA']; # 商品名
@@ -73,4 +73,4 @@ $prepare->bindValue(':intB', $intB, PDO::PARAM_STR);         # 埋め込み3
 $prepare->execute(); # 実行
 ```
 
-**以上のコードを含む[`pattern-post.php`](pattern-post.php)を作り，http://localhost/pattern-post.html からデータを追加できることを確かめてください．確かめるには，http://localhost/pattern-table2.php を使うといいでしょう．**
+**以上のコードを含む[`post.php`](post.php)を作り，http://localhost/post.html からデータを追加できることを確かめてください．確かめるには，http://localhost/pattern-table2.php を使うといいでしょう．**
