@@ -10,8 +10,8 @@
 
 ドキュメントルートのフォルダ`img`（なければ作る）に，次の二つの画像をそのフォルダに保存します．
 
-![product6.png](product6.png)
-![product7.png](product7.png)
+![product6.png](img/product6.png)
+![product7.png](img/product7.png)
 
 ## テーブルの準備
 
