@@ -112,4 +112,4 @@ foreach ($result as $row) {
 
 [`pattern-show-all3.php`](pattern-show-all3.php)
 
-[`pattern-show-all2.php`](pattern-show-all2.php)からの変更点は2箇所です．
+pattern-show-all2.phpからの変更点は2箇所です．
