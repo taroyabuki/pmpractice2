@@ -56,7 +56,7 @@
 
 データベースのアイテムに画像を対応させます．
 
-![](image/pattern-images.png)
+![](images/pattern-images.png)
 
 実装方法は[画像の管理（実装）](images/)で解説します．（2回目以降に読む）
 
