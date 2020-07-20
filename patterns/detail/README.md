@@ -2,11 +2,11 @@
 
 文字列，ラジオボタン，チェックボックスを組み合わせた検索フォームを作ります．
 
-![](images/pattern5.png)
+![](pattern-form.png)
 
 ## フォームの作成
 
-[データの追加（実装）](pattern-post.md)をまねて，詳細検索のためのフォームを作ります．
+[データの追加（実装）](../post/)をまねて，詳細検索のためのフォームを作ります．
 
 ```html
 <form action="pattern-detail.php" method="get">

@@ -2,7 +2,7 @@
 
 テーブル`table1`の全データを取り出して，表示させます．
 
-![](images/pattern1.png)
+![](pattern-show-all.png)
 
 手順は次のとおりです．
 
@@ -11,7 +11,7 @@
 
 ## 1 SQLの実行
 
-テーブル`table1`の全データを取り出すSQLは「`select * from table1`」です（[データベースの操作](sql.md)のC2）．
+テーブル`table1`の全データを取り出すSQLは「`select * from table1`」です（[データベースの操作](/docs/sql.md)のC2）．
 
 このSQL文をPHPで作り，実行します．
 2行目以降は今は謎のままでかまいません．
@@ -27,7 +27,7 @@ $result = $prepare->fetchAll(PDO::FETCH_ASSOC); # 結果の取得
 
 ## 2 結果の処理
 
-[データベースの操作](sql.md)のとおり作業していると，データベースの中身は次のようになっています．
+[データベースの操作](/docs/sql.md)のとおり作業していると，データベースの中身は次のようになっています．
 
 id|varcharA|intA|intB
 -:|--|-:|-:
@@ -46,9 +46,9 @@ foreach ($result as $row) {
 }
 ```
 
-ちょっと面倒なのですが，データベースから取り出したデータを表示するときは，関数`h`を使うようにしします（クライアントから送信されたデータも）．そうしないと，「`x < 3`」のような文字列の`<`がタグの一部と見なされてしまいます．`h`は，このような特別な文字を変換する関数です（例：`<`→`&lt;`）．（[db.php](db.php)で定義しています．）
+ちょっと面倒なのですが，データベースから取り出したデータを表示するときは，関数`h`を使うようにしします（クライアントから送信されたデータも）．そうしないと，「`x < 3`」のような文字列の`<`がタグの一部と見なされてしまいます．`h`は，このような特別な文字を変換する関数です（例：`<`→`&lt;`）．（[db.php](/db.php)で定義しています．）
 
-**以上のコードを含む[`pattern-table1.php`](pattern-table1.php)を作り，http://localhost/pattern-table1.php でデータが表示されることを確かめてください．**
+**以上のコードを含む[`pattern-show-all1.php`](pattern-show-all1.php)を作り，http://localhost/pattern-show-all1.php でデータが表示されることを確かめてください．**
 
 ちょっと味気ないので，結果を表にします．
 HTMLのtable要素を使います．
@@ -104,12 +104,12 @@ foreach ($result as $row) {
 </table>
 ```
 
-**以上のコードを含む[`pattern-table2.php`](pattern-table2.php)を作り，http://localhost/pattern-table2.php でデータが表示されることを確かめてください．**
+**以上のコードを含む[`pattern-show-all2.php`](pattern-show-all2.php)を作り，http://localhost/pattern-show-all2.php でデータが表示されることを確かめてください．**
 
 ## 応用
 
-別のパターン（[特定のデータの表示（実装）](pattern-id.md)）を実装すると，結果をリンクにできます．
+別のパターン（[特定のデータの表示（実装）](../id/)）を実装すると，結果をリンクにできます．
 
-[`pattern-table3.php`](pattern-table3.php)
+[`pattern-show-all3.php`](pattern-show-all3.php)
 
-[`pattern-table2.php`](pattern-table2.php)からの変更点は2箇所です．
+[`pattern-show-all2.php`](pattern-show-all2.php)からの変更点は2箇所です．

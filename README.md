@@ -19,5 +19,5 @@
     1. [データベースの操作](docs/sql.md)
     1. [PHP](docs/php.md)（2回目以降に読む）
     1. [PHPとMySQL](docs/phpmysql.md)（2回目以降に読む）
-1. [ウェブアプリのパターン](docs/patterns.md)
+1. [ウェブアプリのパターン](patterns/)
 1. [本番サーバへのデプロイ](docs/deployment.md)

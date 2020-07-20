@@ -2,7 +2,7 @@
 
 データベースのアイテムに画像を対応させます．
 
-![](images/pattern4.png)
+![](pattern-images.png)
 
 画像自体をデータベースで管理するのが正攻法ですが，ここでは話を簡単にするために，画像はデータベースではなくフォルダ`img`の中に入れ，データベースではファイル名だけを管理することにします．
 
@@ -10,8 +10,8 @@
 
 ドキュメントルートのフォルダ`img`（なければ作る）に，次の二つの画像をそのフォルダに保存します．
 
-![product6.png](images/product6.png)
-![product7.png](images/product7.png)
+![product6.png](product6.png)
+![product7.png](product7.png)
 
 ## テーブルの準備
 
@@ -39,7 +39,7 @@ insert into table2 (id, varcharA, intA, intB, varcharB) values
 
 ## 画像の表示
 
-[特定のデータの表示（実装）](pattern-id.md)をまねて，http://localhost/table2.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
+[特定のデータの表示（実装）](../show-all/)をまねて，http://localhost/table2.php?id=2 にアクセスしたときに，画像があれば表示されるようにします．
 
 変わるのは，SQL文中のテーブル名と結果の処理方法です．
 
@@ -64,4 +64,4 @@ foreach ($result as $row) {
 }
 ```
 
-**[table1.php](table1.php)と上のコードをもとに[table2.php](table2.php)を作り，http://localhost/table2.php?id=1 とhttp://localhost/table2.php?id=2 では画像が表示され，http://localhost/table2.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**
+**[../show-all/table1.php](../show-all/table1.php)と上のコードをもとに[table2.php](table2.php)を作り，http://localhost/table2.php?id=1 とhttp://localhost/table2.php?id=2 では画像が表示され，http://localhost/table2.php?id=3 では画像が表示されないことを確かめてください．（SQL文中のテーブル名を変えるのを忘れないように．）**
