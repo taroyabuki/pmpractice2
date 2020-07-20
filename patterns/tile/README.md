@@ -200,7 +200,11 @@ http://localhost/tile.php で結果を確認しましょう．
 とはいえ，各セルに同じようなコードを書くのは大変なので，[tile2.php](tile2.php)のように，関数を呼び出すだけでいいようにしましょう．
 よくわからなければ，table1.phpのままでいいです．
 
+http://localhost/tile2.php で結果を確認しましょう．
+
 ## 実装の工夫2
 
 さらに，[tile3.php](tile3.php)のようにループを使うようにすれば，プログラムはかなり単純になります．
 よくわからなければ，table1.phpやtile2.phpのままでいいです．
+
+http://localhost/tile3.php で結果を確認しましょう．

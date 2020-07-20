@@ -22,6 +22,6 @@ $prepare->bindValue(':col', $col, PDO::PARAM_STR); # 埋め込み2
 $prepare->execute(); # 実行
 ?>
     <p><?php echo "追加：{$row}, {$col}";?></p>
-    <p><a href="table2.php">確認</a></p>
+    <p><a href="tile2.php">確認</a></p>
   </body>
 </html>
