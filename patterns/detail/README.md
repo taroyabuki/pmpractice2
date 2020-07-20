@@ -9,7 +9,7 @@
 [データの追加（実装）](../post/)をまねて，詳細検索のためのフォームを作ります．
 
 ```html
-<form action="pattern-detail.php" method="get">
+<form action="detail.php" method="get">
   <table>
     <tr>
       <th>商品名に含む</th>
@@ -38,10 +38,10 @@ form要素のmethod属性は`get`です．厳密な区別はないのですが�
 補足：あとで楽をするためにちょっと頭を使っていて，価格の「上限なし」を選んだときに，大きい値（1億円）を送るようにしています．
 そうしておけば，価格の条件をいつも「`intA <= 送信された値`」と書けるわけです．
 
-**上のフォームを含む[`pattern-detail.html`](pattern-detail.html)を作り，http://localhost/pattern-detail.html で確認しましょう．**
+**上のフォームを含む[`detail.html`](detail.html)を作り，http://localhost/detail.html で確認しましょう．**
 
 データを入れて，送信ボタンを押してみます．
-サーバ側（`pattern-detail.php`）をまだ作っていないのでエラーになりますが，URLの`?`以降がこんな感じになるはずです．
+サーバ側（`detail.php`）をまだ作っていないのでエラーになりますが，URLの`?`以降がこんな感じになるはずです．
 
 ```
 ?varcharA=D&price=500&instock=on
@@ -86,7 +86,7 @@ echo '送信されたデータ：<table>' .
      '</table>';
 ```
 
-**このようなコードを含む`pattern-detail.php`を作り，http://localhost/pattern-detail.html からデータを送信してみましょう．**（この先も作ってしまっていますが[pattern-detail.php](pattern-detail.php)を使ってもかまいません．）
+**このようなコードを含む`detail.php`を作り，http://localhost/detail.html からデータを送信してみましょう．**（この先も作ってしまっていますが[detail.php](detail.php)を使ってもかまいません．）
 
 ## 実験用データの作成
 
@@ -135,6 +135,6 @@ where varcharA like :varcharA
   and intB > :instock
 ```
 
-あとは，[特定のデータの表示（実装）](pattern-id.md)と同じです．
+あとは，[特定のデータの表示（実装）](../id/)と同じです．
 
-**このようなコードを組み込んだ[pattern-detail.php](pattern-detail.php)を作り，http://localhost/pattern-detail.html からデータを送信してみましょう．**
+**このようなコードを組み込んだ[detail.php](detail.php)を作り，http://localhost/detail.html からデータを送信してみましょう．**
