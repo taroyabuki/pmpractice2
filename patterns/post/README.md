@@ -73,4 +73,4 @@ $prepare->bindValue(':intB', $intB, PDO::PARAM_STR);         # 埋め込み3
 $prepare->execute(); # 実行
 ```
 
-**以上のコードを含む[`post.php`](post.php)を作り，http://localhost/post.html からデータを追加できることを確かめてください．確かめるには，http://localhost/pattern-table2.php を使うといいでしょう．**
+**以上のコードを含む[`post.php`](post.php)を作り，http://localhost/post.html からデータを追加できることを確かめてください．確かめるには，http://localhost/show-all2.php を使うといいでしょう．**

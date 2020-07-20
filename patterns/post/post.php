@@ -24,6 +24,6 @@ $prepare->bindValue(':intB', $intB, PDO::PARAM_STR);         # 埋め込み3
 $prepare->execute(); # 実行
 ?>
 
-    <p><a href="pattern-table2.php">確認</a></p>
+    <p><a href="show-all2.php">確認</a></p>
   </body>
 </html>
