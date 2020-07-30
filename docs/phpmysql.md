@@ -17,7 +17,7 @@ mydbを作っていない場合のエラー：
 Can't connect to the database: SQLSTATE[HY000] [1049] Unknown database 'mydb'
 
 権限を設定していない場合のエラー：
-```Can't connect to the database: SQLSTATE[HY000] [1045] Access denied for user 'testuser'@'localhost' (using password: YES)
+Can't connect to the database: SQLSTATE[HY000] [1045] Access denied for user 'testuser'@'localhost' (using password: YES)
 ```
 
 データベースを使いたいときは，`db.php`を読み込みます．
