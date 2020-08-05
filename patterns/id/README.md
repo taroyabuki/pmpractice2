@@ -1,6 +1,6 @@
-# 特定のデータの表示（実装）
+# 特定のデータの表示や削除（実装）
 
-URLで指定した，テーブル内の特定のデータを表示します．
+URLで指定した，テーブル内の特定のデータを表示・削除します．
 
 ![](pattern-id.png)
 
@@ -33,20 +33,22 @@ $id = $_GET['id']; # URLからIDを取得
 この番号の部分は実行時に決まるので，穴埋めにします．
 
 ```sql
-SELECT * FROM table1 where id=穴
+select * from table1 where id=穴
 ```
 
 ふつうは次のように書きます．
 
 ```sql
-SELECT * FROM table1 where id=:id
+select * from table1 where id=:id
 ```
+
+これを，`delete from table1 where id=:id`にすれば削除になります．
 
 こういう穴埋めSQLを使うプログラムは次のようになります．
 
 ```php
 require 'db.php';                                # 接続
-$sql = 'SELECT * FROM table1 where id=:id';      # 穴埋めSQL文
+$sql = 'select * from table1 where id=:id';      # 穴埋めSQL文
 $prepare = $db->prepare($sql);                   # 準備
 $prepare->bindValue(':id', $id, PDO::PARAM_STR); # 番号の埋め込み
 $prepare->execute();                             # 実行

@@ -43,7 +43,7 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 1. ターミナル→新しいターミナル（またはCtrl+Shift+@）
 1. （1回だけ）`git config --global user.name "自分の名前"`
 1. （1回だけ）`git config --global user.email "自分のメアド"`
-1. （データベースを更新したい場合）`c:/xampp/mysql/bin/mysqldump.exe -uroot --result-file=mydb.sql mydb`
+1. `c:/xampp/mysql/bin/mysqldump.exe -uroot --result-file=mydb.sql mydb`
 1. フォルダhtdocsに，必要なファイルを置く．
 1. ソース管理アイコンをクリックする．
 1. サーバで更新するファイルの「+」をクリックする．（これを**ステージング**という．）
