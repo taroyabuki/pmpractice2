@@ -39,7 +39,7 @@ if (isset($_POST['username'], $_POST['password'])) {
   <form action="login.php" method="post">
     <ul style="list-style-type: none;">
       <li><input type="text" name="username" placeholder="ユーザ名" /></li>
-      <li><input type="text" name="password" placeholder="パスワード" /></li>
+      <li><input type="password" name="password" placeholder="パスワード" /></li>
       <li><input type="submit" value="ログイン" /></li>
     </ul>
   </form>
