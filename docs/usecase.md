@@ -1,5 +1,6 @@
 ```puml
 @startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean-outline/puml-theme-cerulean-outline.puml
 
 actor 開発者
 actor 利用者
