@@ -1,33 +1,56 @@
 ```puml
 @startuml
 
-actor 閲覧者
-actor 運営者またはユーザ
+actor 開発者
+actor 利用者
 
-package クライアント側 {
-usecase ブラウザ as "ウェブブラウザ
-Chrome, Edge, Firefox, Safari
---
-言語：HTML, CSS, (JavaScript)"
+(コーディング)
+(バージョン管理)
+(データ管理)
+(利用)
+
+node 開発用PC {
+rectangle XAMPP {
+rectangle ウェブサーバ
+database データベース
+rectangle phpMyAdmin
+}
+rectangle VSCode
+rectangle Git
+folder htdocs {
+file php
+file html
+file css
+file jpeg
+}
 }
 
-package サーバ側 {
-usecase ウェブサーバ as "ウェブサーバ
-Apache
---
-言語：PHP"
+cloud GitHub
 
-usecase データベース as "データベース
-MySQL
---
-言語：SQL"
+node 本番用サーバ {
+rectangle ウェブサーバ2 as "ウェブサーバ"
+database データベース2 as "データベース"
 }
 
-閲覧者 -> ブラウザ
-ブラウザ <- 運営者またはユーザ
-運営者またはユーザ --> ウェブサーバ
-運営者またはユーザ --> データベース
-ブラウザ <--> ウェブサーバ : HTTPプロトコル
+開発者 --> コーディング
+コーディング --> VSCode
+開発者 --> バージョン管理
+バージョン管理 --> VSCode
+開発者 --> データ管理
+データ管理 --> phpMyAdmin
+データ管理 --> データベース
+VSCode --> htdocs
+VSCode --> Git
+htdocs -> ウェブサーバ
+htdocs <--> Git
+phpMyAdmin --> データベース
+phpMyAdmin -- ウェブサーバ
 ウェブサーバ <-> データベース
+Git <--> GitHub
+GitHub --> 本番用サーバ
+利用者 --> 利用
+利用 --> ウェブサーバ2
+ウェブサーバ2 <-> データベース2
+
 @enduml
 ```
