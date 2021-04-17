@@ -1,6 +1,9 @@
 ```puml
 @startuml
-!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean-outline/puml-theme-cerulean-outline.puml
+skinparam {
+  defaultFontName Hiragino Kaku Gothic ProN
+  monochrome true
+}
 
 actor 利用者
 actor 運営者
