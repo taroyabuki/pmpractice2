@@ -8,10 +8,7 @@
 
 ## 準備
 
-GitHubのアカウントを報告してください→https://docs.google.com/forms/d/e/1FAIpQLSc7ro4KUs9GT0t3H-Aolizl1UKCPbmJA5Kv6lZlqvML4hAzvA/viewform
-
-矢吹の作業後（ここは手動なので時間がかかることがあります），GitHubからGitHubに登録したメアド宛てにメールが届きます．
-そのメールに対応してください．**（メールの有効期間が短いことに注意．）**
+チームのリポジトリへの書き込み権限が必要です．書き込めない人は，矢吹に問い合わせてください．
 
 ## 概要
 
