@@ -2,7 +2,7 @@
 
 URLで指定した，テーブル内の特定のデータを表示・削除します．
 
-![](pattern-id.png)
+![](pattern-id.svg)
 
 ## URLの仕様
 

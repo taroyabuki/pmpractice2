@@ -32,7 +32,7 @@
 
 テーブル内のデータをすべて表示します．
 
-![](show-all/pattern-show-all.png)
+![](show-all/pattern-show-all.svg)
 
 実装方法を[全データ表示（実装）](show-all/)で解説します．（2回目以降に読む）
 
@@ -40,7 +40,7 @@
 
 テーブル内の特定のデータを表示（削除）します．
 
-![](id/pattern-id.png)
+![](id/pattern-id.svg)
 
 実装方法は[特定のデータの表示（実装）](id/)で解説します．（2回目以降に読む）
 
@@ -48,7 +48,7 @@
 
 フォームから送られたデータをデータベースに登録します．
 
-![](post/pattern-post.png)
+![](post/pattern-post.svg)
 
 実装方法は[データの追加（実装）](post/)で解説します．（2回目以降に読む）
 
@@ -56,7 +56,7 @@
 
 データベースのアイテムに画像を対応させます．
 
-![](images/pattern-images.png)
+![](images/pattern-images.svg)
 
 実装方法は[画像の管理（実装）](images/)で解説します．（2回目以降に読む）
 
@@ -64,7 +64,7 @@
 
 文字列，ラジオボタン，チェックボックスを組み合わせた検索フォームを作ります．
 
-![](detail/pattern-detail.png)
+![](detail/pattern-detail.svg)
 
 実装方法は[詳細検索（実装）](detail/)で解説します．（2回目以降に読む）
 

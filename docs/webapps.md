@@ -3,6 +3,7 @@
 skinparam {
   defaultFontName Hiragino Kaku Gothic ProN
   monochrome true
+  shadowing false
 }
 
 actor 利用者

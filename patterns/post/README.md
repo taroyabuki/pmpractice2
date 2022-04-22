@@ -2,7 +2,7 @@
 
 フォームから送られたデータをデータベースに登録します．
 
-![](pattern-post.png)
+![](pattern-post.svg)
 
 ## フォームの作成
 

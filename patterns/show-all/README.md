@@ -2,7 +2,7 @@
 
 テーブル`table1`の全データを取り出して，表示させます．
 
-![](pattern-show-all.png)
+![](pattern-show-all.svg)
 
 手順は次のとおりです．
 

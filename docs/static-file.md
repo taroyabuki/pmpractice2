@@ -27,7 +27,11 @@ HTMLファイルの拡張子は`.html`にするのが一般的です．
 
 `<a href="foo">bar</a>`というのはリンクのためのHTML要素で，barというテキストがfooへのリンクになります．
 ウェブができるのはリンクのおかげなので，このa要素がHTMLの最も重要な要素と言えます．
-とはいえ，HTML要素はとてもたくさんあるので，[とほほのWWW入門](http://www.tohoho-web.com/www.htm)のようなリファレンスや，検索を活用しましょう（例：「html リンク 要素」でググる）．
+とはいえ，HTML要素はとてもたくさんあるので，次のような資料を活用しましょう．
+
+- [とほほのWWW入門](http://www.tohoho-web.com/www.htm)
+- https://developer.mozilla.org/ja/docs/Web/HTML
+- エビスコム『HTML5＆CSS3デザイン 現場の新標準ガイド』（マイナビ出版, 第2版, 2020）
 
 （予告）HTMLファイルをダブルクリックでブラウザで開くと，ブラウザのアドレス欄には，`file:///C:/Users/yabuki/Desktop/hello.html`のような文字列が表示されます．
 この文字列の先頭が`file://`であることが重要で（あとは状況次第），ウェブサーバを使うようになると，この部分が`http://`や`https://`に変わります．
