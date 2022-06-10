@@ -39,7 +39,7 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 1. 「開く」
 1. ターミナル→新しいターミナル（またはCtrl+Shift+@）
 1. （1回だけ）`git config --global user.name "自分の名前"`
-1. （1回だけ）`git config --global user.email "自分のメアド"`
+1. （1回だけ）`git config --global user.email "自分のメアド"`（GitHubの[メアドの設定](https://github.com/settings/emails)によっては，後でプッシュに失敗するらしい（再現できていない）．簡単な解決策は，ここでダミーのメアドを使うこと？）
 1. `c:/xampp/mysql/bin/mysqldump.exe -uroot --result-file=mydb.sql mydb`
 1. フォルダhtdocsに，必要なファイルを置く．
 1. ソース管理アイコンをクリックする．
