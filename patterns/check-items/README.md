@@ -5,7 +5,6 @@
 選択されたアイテムに対する処理の例として，varcharAに「*」を追記します．
 
 <table>
-  <caption>全データ</caption>
   <tr>
     <th>ID</th>
     <th>商品名</th>
