@@ -14,7 +14,7 @@
   </tr>
 <tr><td>1</td><td>A</td><td>1280</td><td>1</td><td>☑</td></tr><tr><td>2</td><td>B</td><td>2980</td><td>0</td><td>☐</td></tr><tr><td>3</td><td>C</td><td>198</td><td>121</td><td>☑</td></tr></table>
 
-まず，[全データ表示（実装）](show-all/)のhttp://localhost/show-all2.php が動くようにしてください．
+まず，[全データ表示（実装）](../show-all/)のhttp://localhost/show-all2.php が動くようにしてください．
 これを改造します．
 
 ## 1 チェックボックスの追加
