@@ -34,7 +34,7 @@ foreach ($result as $row) {
     "<td>{$varcharA}</td>".
     "<td>{$intA}</td>".
     "<td>{$intB}</td>".
-    "<td><input type='checkbox' name='id[]' value='$id'</td>".
+    "<td><input type='checkbox' name='id[]' value='$id'/></td>".
     '</tr>';
 }
 ?>
