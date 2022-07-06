@@ -1,5 +1,7 @@
 # 準備
 
+補足：開発環境として，XAMPPではなくDockerを使う場合は，[Dockerの導入](https://github.com/taroyabuki/pmit/tree/master/docker)を参照してください．
+
 ## 後片付け
 
 忘れないように，後片付けのことを先に書いておきます．後片付けは次のようにします．
