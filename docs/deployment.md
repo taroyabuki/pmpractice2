@@ -67,16 +67,16 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 - https://github.com/yabukilab/shimoda-a
 - https://github.com/yabukilab/shimoda-b
 - https://github.com/yabukilab/shimoda-c
+- https://github.com/yabukilab/shimoda-d
 - https://github.com/yabukilab/ogasawara-a
 - https://github.com/yabukilab/ogasawara-b
 - https://github.com/yabukilab/ogasawara-c
+- https://github.com/yabukilab/ogasawara-d
 - https://github.com/yabukilab/yabuki-a
 - https://github.com/yabukilab/yabuki-b
 - https://github.com/yabukilab/yabuki-c
+- https://github.com/yabukilab/yabuki-d
 - https://github.com/yabukilab/yabuki-x
-- https://github.com/yabukilab/takuma-a
-- https://github.com/yabukilab/takuma-b
-- https://github.com/yabukilab/takuma-c
 
 補足：最後に`.git`を付けたURLでクローンします．
 
@@ -85,16 +85,16 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 - https://shimoda-a.pm-chiba.tech
 - https://shimoda-b.pm-chiba.tech
 - https://shimoda-c.pm-chiba.tech
+- https://shimoda-d.pm-chiba.tech
 - https://ogasawara-a.pm-chiba.tech
 - https://ogasawara-b.pm-chiba.tech
 - https://ogasawara-c.pm-chiba.tech
+- https://ogasawara-d.pm-chiba.tech
 - https://yabuki-a.pm-chiba.tech
 - https://yabuki-b.pm-chiba.tech
 - https://yabuki-c.pm-chiba.tech
+- https://yabuki-d.pm-chiba.tech
 - https://yabuki-x.pm-chiba.tech
-- https://takuma-a.pm-chiba.tech
-- https://takuma-b.pm-chiba.tech
-- https://takuma-c.pm-chiba.tech
 
 ## うまく行かない場合
 
