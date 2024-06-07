@@ -37,7 +37,7 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 共有フォルダでの作業では，この問題をうまく解決できません．
 とはいえ，初めて使うときにエラーが発生しても困るでしょうから，チームで試すときは，一人が以下のすべてのステップを終えてから，次の人が始めるようにするといいでしょう．
 
-1. https://git-scm.com からGitをダウンロードしてインストールします．
+1. https://git-scm.com からGitをダウンロードしてインストールする．
 1. VS Codeを起動し，ソース管理アイコンをクリックする．
 1. リポジトリをクローン
 1. リポジトリのURLを入力する．例：`https://github.com/yabukilab/yabuki-x.git`（場所はデスクトップなど，どこでもいい．）
@@ -93,4 +93,4 @@ https://github.com/yabukilab/yabuki-x|https://yabuki-x.pm-chiba.tech
 
 ## うまく行かない場合
 
-[ログ](https://admin.pm-chiba.tech/log/)を確認する（**学内のみ**）．
+[ログ](https://admin.pm-chiba.tech/log/)を確認します（**学内のみ**）．
