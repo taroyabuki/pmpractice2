@@ -6,6 +6,11 @@
 本番サーバで用意する環境には，開発環境（XAMPP）とは違うところがあります．
 開発環境でちゃんと動くのに本番環境ではうまく動かないという場合は，あまり悩まずに矢吹に相談してください．
 
+できあがりの例：
+
+- リポジトリ：https://github.com/yabukilab/yabuki-x
+- ウェブサイト：https://yabuki-x.pm-chiba.tech
+
 ## 準備
 
 チームのリポジトリへの書き込み権限が必要です．書き込めない人は，矢吹に問い合わせてください．
@@ -62,40 +67,30 @@ VS Codeで実行する手順を説明します．（GitHub Desktopとか，別�
 1. 「･･･」→プッシュ
 1. 少し待ってから，サイトにアクセスする．
 
-## 各チームのリポジトリ
+## 各チームのURL
 
-- https://github.com/yabukilab/shimoda-a
-- https://github.com/yabukilab/shimoda-b
-- https://github.com/yabukilab/shimoda-c
-- https://github.com/yabukilab/shimoda-d
-- https://github.com/yabukilab/ogasawara-a
-- https://github.com/yabukilab/ogasawara-b
-- https://github.com/yabukilab/ogasawara-c
-- https://github.com/yabukilab/ogasawara-d
-- https://github.com/yabukilab/yabuki-a
-- https://github.com/yabukilab/yabuki-b
-- https://github.com/yabukilab/yabuki-c
-- https://github.com/yabukilab/yabuki-d
-- https://github.com/yabukilab/yabuki-x
+リポジトリ|ウェブサイト
+--|--
+https://github.com/yabukilab/matsuda-a|https://matsuda-a.pm-chiba.tech
+https://github.com/yabukilab/matsuda-b|https://matsuda-b.pm-chiba.tech
+https://github.com/yabukilab/matsuda-c|https://matsuda-c.pm-chiba.tech
+https://github.com/yabukilab/matsuda-d|https://matsuda-d.pm-chiba.tech
+https://github.com/yabukilab/ogasawara-a|https://ogasawara-a.pm-chiba.tech
+https://github.com/yabukilab/ogasawara-b|https://ogasawara-b.pm-chiba.tech
+https://github.com/yabukilab/ogasawara-c|https://ogasawara-c.pm-chiba.tech
+https://github.com/yabukilab/ogasawara-d|https://ogasawara-d.pm-chiba.tech
+https://github.com/yabukilab/shimoda-a|https://shimoda-a.pm-chiba.tech
+https://github.com/yabukilab/shimoda-b|https://shimoda-b.pm-chiba.tech
+https://github.com/yabukilab/shimoda-c|https://shimoda-c.pm-chiba.tech
+https://github.com/yabukilab/shimoda-d|https://shimoda-d.pm-chiba.tech
+https://github.com/yabukilab/yabuki-a|https://yabuki-a.pm-chiba.tech
+https://github.com/yabukilab/yabuki-b|https://yabuki-b.pm-chiba.tech
+https://github.com/yabukilab/yabuki-c|https://yabuki-c.pm-chiba.tech
+https://github.com/yabukilab/yabuki-d|https://yabuki-d.pm-chiba.tech
+https://github.com/yabukilab/yabuki-x|https://yabuki-x.pm-chiba.tech
 
-補足：最後に`.git`を付けたURLでクローンします．
-
-## 各チームのサイト
-
-- https://shimoda-a.pm-chiba.tech
-- https://shimoda-b.pm-chiba.tech
-- https://shimoda-c.pm-chiba.tech
-- https://shimoda-d.pm-chiba.tech
-- https://ogasawara-a.pm-chiba.tech
-- https://ogasawara-b.pm-chiba.tech
-- https://ogasawara-c.pm-chiba.tech
-- https://ogasawara-d.pm-chiba.tech
-- https://yabuki-a.pm-chiba.tech
-- https://yabuki-b.pm-chiba.tech
-- https://yabuki-c.pm-chiba.tech
-- https://yabuki-d.pm-chiba.tech
-- https://yabuki-x.pm-chiba.tech
+補足：リポジトリのURLの最後に`.git`を付けたURLでクローンします．（例：https://github.com/yabukilab/yabuki-x.git）
 
 ## うまく行かない場合
 
-[ログ](https://admin.pm-chiba.tech/log/)を確認する．（本当は，外から見える場所にログを置いてはいけない．）
+[ログ](https://admin.pm-chiba.tech/log/)を確認する（**学内のみ**）．
