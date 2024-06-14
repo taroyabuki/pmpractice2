@@ -11,6 +11,10 @@
 - リポジトリ：https://github.com/yabukilab/yabuki-x
 - ウェブサイト：https://yabuki-x.pm-chiba.tech
 
+よくある間違い
+
+- データベースへの接続方法が間違っている．データベースに接続するときの，ユーザ名とパスワードは矢吹が設定しています．それをコードに書いてGitHubで公開されると困るので，[db.php](/db.php)の方法で接続するようにしてください．
+
 ## 準備
 
 チームのリポジトリへの書き込み権限が必要です．書き込めない人は，矢吹に問い合わせてください．
@@ -93,4 +97,4 @@ https://github.com/yabukilab/yabuki-x|https://yabuki-x.pm-chiba.tech
 
 ## うまく行かない場合
 
-[ログ](https://admin.pm-chiba.tech/log/)を確認します（**学内のみ**）．
+[ログ](https://admin.pm-chiba.tech/report.php)を確認します（**学内のみ**）．
