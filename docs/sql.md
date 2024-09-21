@@ -33,7 +33,8 @@ drop database if exists mydb;
 create database mydb charset=utf8mb4;
 
 # (A3)ユーザ名testuser，パスワードpassでmydbにアクセスできるようにする．
-grant all on mydb.* to testuser@localhost identified by 'pass';
+CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'pass';
+GRANT ALL PRIVILEGES ON mydb.* TO 'testuser'@'localhost';
 
 # (A4)mydbを使うことを宣言する．
 use mydb;
