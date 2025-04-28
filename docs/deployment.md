@@ -93,7 +93,9 @@ https://github.com/yabukilab/yabuki-c|https://yabuki-c.pm-chiba.tech
 https://github.com/yabukilab/yabuki-d|https://yabuki-d.pm-chiba.tech
 https://github.com/yabukilab/yabuki-x|https://yabuki-x.pm-chiba.tech
 
-補足：リポジトリのURLの最後に`.git`を付けたURLでクローンします．（例：https://github.com/yabukilab/yabuki-x.git）
+補足：リポジトリのURLの最後に`.git`を付けたURLでクローンします．例：https://github.com/yabukilab/yabuki-x.git
+
+リポジトリのURLの`github`を`deepwiki`にすると，ドキュメントが生成されます．例：https://deepwiki.com/yabukilab/yabuki-x
 
 ## うまく行かない場合
 
